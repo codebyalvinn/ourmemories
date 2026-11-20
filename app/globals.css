@@ -1100,6 +1100,8 @@ p {
 @media (max-width: 720px) {
   :root {
     --nav-h: 46px;
+    --foot-h: 30px;
+    --frame: 5px;
   }
 
   .nav__brand {
@@ -1107,7 +1109,19 @@ p {
   }
   .nav {
     justify-content: center;
-    font-size: 1.1rem;
+    padding-inline: 8px;
+    font-size: clamp(0.92rem, 4.2vw, 1.1rem);
+  }
+  .nav__links {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 4px;
+  }
+  .nav__link {
+    min-height: 44px;
+    min-width: 72px;
+    display: grid;
+    place-items: center;
   }
   .foot {
     font-size: 0.55rem;
@@ -1177,7 +1191,7 @@ p {
     right: 4px;
     width: auto;
     top: 26%;
-    bottom: 80px;
+    bottom: 72px;
     align-items: flex-start;
   }
   .albums {
@@ -1185,8 +1199,15 @@ p {
     padding: 14px 10% 14px 10px;
     gap: 16px 12px;
   }
+  .album__meta strong {
+    font-size: clamp(0.72rem, 3.4vw, 0.9rem);
+  }
+  .album__meta small {
+    font-size: 0.58rem;
+  }
   .album__meta { margin-top: 8px; }
-  .np { left: 10px; right: 10px; bottom: 8px; padding: 8px 10px; gap: 10px; }
+  .np { left: 8px; right: 8px; bottom: 6px; padding: 7px 8px; gap: 8px; }
+  .np__btn { width: 40px; height: 40px; }
   .np__bar { display: none; }
 
   .lb__nav {
@@ -1195,6 +1216,131 @@ p {
   }
   .lb__nav--prev { left: 18px; }
   .lb__nav--next { right: 18px; }
+}
+
+/* tablet dan layar menengah */
+@media (min-width: 721px) and (max-width: 960px) {
+  .nav {
+    padding-inline: 18px;
+  }
+  .nav__links {
+    gap: 12px;
+  }
+  .cv-t {
+    font-size: clamp(1rem, 3.2vw, 1.8rem);
+  }
+  .cv-t--hand {
+    font-size: clamp(1.4rem, 4.2vw, 2.5rem);
+  }
+  .mem__title h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+  .music__title {
+    left: 3%;
+    width: 28%;
+  }
+  .music__title h2 {
+    font-size: clamp(1.2rem, 3.2vw, 2.2rem);
+  }
+  .music__shelf {
+    right: 2%;
+    width: 66%;
+  }
+  .albums {
+    --album-min: clamp(95px, 13vw, 140px);
+  }
+  .np {
+    left: 3%;
+    right: 3%;
+  }
+}
+
+/* layar sangat sempit atau HP kecil */
+@media (max-width: 380px) {
+  :root {
+    --nav-h: 44px;
+  }
+  .nav__link {
+    min-width: 64px;
+  }
+  .cgrid {
+    margin-inline: 5px;
+  }
+  .cv-t4 {
+    grid-row: 7 / span 2;
+  }
+  .cv-hint {
+    grid-row: 12;
+  }
+  .mem__title h2 {
+    font-size: 1.75rem;
+  }
+  .mem__note {
+    max-width: 210px;
+  }
+  .music__shelf {
+    top: 24%;
+  }
+  .albums {
+    --album-min: 26vw;
+  }
+  .np__info small {
+    max-width: 150px;
+  }
+}
+
+/* HP dalam orientasi lanskap */
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --nav-h: 42px;
+    --foot-h: 26px;
+    --frame: 4px;
+  }
+  .nav,
+  .nav__link {
+    min-height: 42px;
+  }
+  .cover {
+    transform: scale(0.96);
+  }
+  .mem__title {
+    top: 0;
+  }
+  .mem__title h2 {
+    font-size: clamp(1.45rem, 5vh, 2.2rem);
+  }
+  .mem__note {
+    margin-top: 2px;
+  }
+  .board {
+    aspect-ratio: 16 / 10;
+    width: min(76%, calc((100svh - 150px) * 1.6));
+  }
+  .photo {
+    left: var(--x);
+    top: var(--y);
+    width: var(--w);
+    --rot: var(--r);
+  }
+  .music__title {
+    top: 2%;
+  }
+  .music__title h2 {
+    font-size: clamp(1rem, 5.2vh, 1.6rem);
+  }
+  .hint {
+    display: none;
+  }
+  .music__shelf {
+    top: 12%;
+    bottom: 58px;
+  }
+  .albums {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(72px, 16vh, 110px), 1fr));
+  }
+  .np {
+    bottom: 4px;
+  }
 }
 
 /* layar pendek (laptop kecil / lanskap HP) */
