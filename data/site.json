@@ -1,0 +1,17 @@
+{
+  "title": "Kenangan Kita",
+  "description": "Tempat kecil untuk menyimpan hal-hal yang tidak ingin kita lupakan.",
+  "owner": "our memories",
+  "coverLines": [
+    "every moment",
+    "every laugh",
+    "every tears",
+    "i love it when it's you."
+  ],
+  "coverHint": "scroll bubbb",
+  "memoriesTitle": "Kenangan",
+  "memoriesNote": "kamu bisa klik fotonya",
+  "musicTitle": ["lagu yang", "kusimpan", "namamu."],
+  "musicHint": "klik untuk putar",
+  "footer": "ourmemories"
+}

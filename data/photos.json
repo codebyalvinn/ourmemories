@@ -1,0 +1,51 @@
+[
+  {
+    "id": "p1",
+    "src": "/photos/foto1.jpeg",
+    "caption": "first meet",
+    "date": "12 Agu 2019",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+  {
+    "id": "p2",
+    "src": "/photos/foto2.jpeg",
+    "caption": "event",
+    "date": "03 Jan 2020",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+  {
+    "id": "p3",
+    "src": "/photos/foto3.jpeg",
+    "caption": "first flowers",
+    "date": "21 Mar 2021",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+  {
+    "id": "p4",
+    "src": "/photos/foto4.jpeg",
+    "caption": "my sister",
+    "date": "09 Okt 2022",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+  {
+    "id": "p5",
+    "src": "/photos/foto5.jpeg",
+    "caption": "goodbayy",
+    "date": "30 Apr 2023",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+  {
+    "id": "p6",
+    "src": "/photos/foto6.jpeg",
+    "caption": "date before ldr",
+    "date": "17 Des 2024",
+    "alt": "Ganti dengan deskripsi fotomu"
+  },
+    {
+    "id": "p7",
+    "src": "/photos/foto7.png",
+    "caption": "ldr",
+    "date": "17 Des 2024",
+    "alt": "Ganti dengan deskripsi fotomu"
+  }
+]
